@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+main .commentCaMarche, main .presentation, main .localisation, header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+header {
+  padding: 1em;
+}
+header h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+main .localisation {
+  padding: 1em;
+  background: #eaeaea;
+  background: linear-gradient(180deg, rgba(173, 173, 173, 0.35) 0%, rgba(234, 234, 234, 0.75) 15%, rgb(234, 234, 234) 100%);
+}
+main .localisation i {
+  padding: 0 0.5em 0 0;
+}
+main .presentation {
+  padding: 2em 0 3em;
+  background: #f6f6f6;
+  text-align: center;
+}
+main .presentation h2 {
+  padding: 0 5em;
+}
+main .presentation p {
+  padding: 1em 5em 2em;
+}
+main .commentCaMarche {
+  grid-template-columns: repeat(1, 1fr);
+}
+main .commentCaMarche ol {
+  grid-row: 2 / auto;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

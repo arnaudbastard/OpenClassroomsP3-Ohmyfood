@@ -1,0 +1,55 @@
+@import '_variables';
+@import '_mixins';
+@import '_placeholders';
+@import '_components';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+
+main {
+    font-family: 'Roboto', sans-serif;
+
+    & .localisation {
+        @extend %grid-center;
+        padding: 1em;
+        background: #eaeaea;
+        background: linear-gradient(180deg,
+                rgba(173, 173, 173, .35) 0%,
+                rgba(234, 234, 234, .75) 15%,
+                rgba(234, 234, 234, 1) 100%);
+
+        & i {
+            padding: 0 0.5em 0 0;
+        }
+
+    }
+
+    & .presentation {
+        @extend %grid-center;
+        padding: 2em 0 3em;
+        background: #f6f6f6;
+        text-align: center;
+
+        & h2 {
+            padding: 0 5em;
+        }
+
+        & p {
+            padding: 1em 5em 2em;
+        }
+    }
+
+    & .commentCaMarche {
+        @extend %grid-center;
+        @include grid-template-set(1);
+
+        & ol {
+            @include grid-pos-set (2, auto, 1, 4);
+            display: grid;
+            @include grid-template-set($commentCaMarche)
+        }
+
+    }
+}
