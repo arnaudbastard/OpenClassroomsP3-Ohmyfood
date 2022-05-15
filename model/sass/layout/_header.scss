@@ -1,0 +1,23 @@
+header {
+    padding: 1em 10em 1em;
+
+    .btn__home-return {
+        @extend %grid-center;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-self: start;
+        font-size: 1.5rem;
+        color: black;
+
+        & i {
+            @include grid-pos-set (1, auto, 1, auto);
+            justify-self: start;
+        }
+
+        & h1 {
+            @include grid-pos-set (1, auto, 1, auto);
+            font-family: 'Shrikhand', cursive;
+            font-size: 2.6rem;
+        }
+    }
+}
