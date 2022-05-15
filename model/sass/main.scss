@@ -205,8 +205,9 @@ main {
 
             & h2 {
                 @include grid-pos-set(1, auto, 1, 4);
-                display: flex;
                 justify-self: start;
+                display: flex;
+                align-items: center;
                 margin: 0 0 1em;
                 font-family: 'Shrikhand', cursive;
                 font-size: 2rem;

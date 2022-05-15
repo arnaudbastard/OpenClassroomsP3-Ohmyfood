@@ -356,8 +356,9 @@ main .restaurant-menu__content {
 main .restaurant-menu__content h2 {
   grid-row: 1 / auto;
   grid-column: 1 / 4;
-  display: flex;
   justify-self: start;
+  display: flex;
+  align-items: center;
   margin: 0 0 1em;
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
