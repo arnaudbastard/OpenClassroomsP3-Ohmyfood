@@ -1,5 +1,15 @@
-%grid-center{
+%grid-center {
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+%border-length-var {
+    &::after {
+        border-bottom: 3.5px #99E2D0 solid;
+        content: '';
+        display: block;
+        width: 3rem;
+        padding-bottom: 0.35em;
+    }
 }
